@@ -48,6 +48,7 @@ const HomePage = () => {
       >
         <Text style={styles.text}>Cliquez ici</Text>
       </Pressable>
+      <Text>Message</Text>
     </KeyboardAwareScrollView>
   );
 };
