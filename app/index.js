@@ -48,11 +48,7 @@ const HomePage = () => {
       >
         <Text style={styles.text}>Cliquez ici</Text>
       </Pressable>
-<<<<<<< HEAD
       <Text>Message branch master</Text>
-=======
-      <Text>Message</Text>
->>>>>>> asma-branch
     </KeyboardAwareScrollView>
   );
 };
