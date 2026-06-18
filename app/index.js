@@ -39,6 +39,15 @@ const HomePage = () => {
           value={password}
         />
       </View>
+      <Pressable
+        style={({ pressed }) => [
+          styles.button,
+          pressed && styles.buttonPressed,
+        ]}
+        onPress={() => Alert.alert("Bouton pressé !")}
+      >
+        <Text style={styles.text}>Cliquez ici</Text>
+      </Pressable>
     </KeyboardAwareScrollView>
   );
 };
@@ -67,5 +76,19 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: "#F75050",
     marginBottom: 10,
+  },
+  button: {
+    backgroundColor: "purple",
+    padding: 15,
+    borderRadius: 8,
+    alignItems: "center",
+  },
+  buttonPressed: {
+    opacity: 0.6,
+  },
+  text: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });
